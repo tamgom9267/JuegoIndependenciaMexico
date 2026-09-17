@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 1cb89304edcff884b846ebf1b34071a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3153544806079368713
+    second: EdificiosDolores_0
+  - first:
+      213: -7475913579430364905
+    second: EdificiosDolores_1
+  - first:
+      213: 6172518464372840472
+    second: EdificiosDolores_2
+  - first:
+      213: -6442929666751830114
+    second: EdificiosDolores_3
+  - first:
+      213: 1447640245976320272
+    second: EdificiosDolores_4
+  - first:
+      213: 2628680522432492666
+    second: EdificiosDolores_5
+  - first:
+      213: -2770195276275704914
+    second: EdificiosDolores_6
+  - first:
+      213: -1478316295183313250
+    second: EdificiosDolores_7
+  - first:
+      213: -4623127579639718573
+    second: EdificiosDolores_8
+  - first:
+      213: 5802825572789171476
+    second: EdificiosDolores_9
+  - first:
+      213: 3475941961299059373
+    second: EdificiosDolores_10
+  - first:
+      213: 6511929696345520553
+    second: EdificiosDolores_11
+  - first:
+      213: -8220867839303982658
+    second: EdificiosDolores_12
+  - first:
+      213: 1798333954623004668
+    second: EdificiosDolores_13
+  - first:
+      213: 5986202606437957569
+    second: EdificiosDolores_14
+  - first:
+      213: 397869763123773741
+    second: EdificiosDolores_15
+  - first:
+      213: 8646267132358080779
+    second: EdificiosDolores_16
+  - first:
+      213: 5820118851134396480
+    second: EdificiosDolores_17
+  - first:
+      213: 8849934658310456200
+    second: EdificiosDolores_18
+  - first:
+      213: -1186687668093518725
+    second: EdificiosDolores_19
+  - first:
+      213: -2590995524654422271
+    second: EdificiosDolores_20
+  - first:
+      213: 3832369842577438953
+    second: EdificiosDolores_21
+  - first:
+      213: -7544782570848647803
+    second: EdificiosDolores_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EdificiosDolores_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 407
+        width: 236
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f17c5205bb5c34d0800000000000000
+      internalID: -3153544806079368713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 408
+        width: 206
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719b8866538304890800000000000000
+      internalID: -7475913579430364905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_2
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 406
+        width: 260
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8189b7607d039a550800000000000000
+      internalID: 6172518464372840472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_3
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 408
+        width: 431
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e976e6caa9d1696a0800000000000000
+      internalID: -6442929666751830114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_4
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 406
+        width: 118
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0194aff322d071410800000000000000
+      internalID: 1447640245976320272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_5
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 406
+        width: 346
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74b39ff103fa7420800000000000000
+      internalID: 2628680522432492666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 174
+        width: 235
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab1f17c21a4e89d0800000000000000
+      internalID: -2770195276275704914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 173
+        width: 288
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e965de77927fb7be0800000000000000
+      internalID: -1478316295183313250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_8
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 169
+        width: 271
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d5340f5f957dfb0800000000000000
+      internalID: -4623127579639718573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_9
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 169
+        width: 365
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415b6af1d17c78050800000000000000
+      internalID: 5802825572789171476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_10
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 166
+        width: 387
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2ea172cc60d3030800000000000000
+      internalID: 3475941961299059373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 53
+        width: 241
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9fdf0ae850f5a50800000000000000
+      internalID: 6511929696345520553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_12
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 55
+        width: 212
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb16ad4914c99ed80800000000000000
+      internalID: -8220867839303982658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_13
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 55
+        width: 132
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffd3d82437f4f810800000000000000
+      internalID: 1798333954623004668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_14
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 56
+        width: 115
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf7046ed83431350800000000000000
+      internalID: 5986202606437957569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_15
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 41
+        width: 107
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d218cd90174858500800000000000000
+      internalID: 397869763123773741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_16
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 42
+        width: 166
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09b651a526bdf770800000000000000
+      internalID: 8646267132358080779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_17
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 28
+        width: 71
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0489b60424735c050800000000000000
+      internalID: 5820118851134396480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_18
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 28
+        width: 40
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883430acea841da70800000000000000
+      internalID: 8849934658310456200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_19
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 34
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cf2fb6ad9088fe0800000000000000
+      internalID: -1186687668093518725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_20
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 34
+        width: 54
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107a85a4c4fea0cd0800000000000000
+      internalID: -2590995524654422271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_21
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 28
+        width: 55
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e87fba21105f2530800000000000000
+      internalID: 3832369842577438953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EdificiosDolores_22
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 32
+        width: 107
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585020dc93c8b4790800000000000000
+      internalID: -7544782570848647803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EdificiosDolores_0: -3153544806079368713
+      EdificiosDolores_1: -7475913579430364905
+      EdificiosDolores_10: 3475941961299059373
+      EdificiosDolores_11: 6511929696345520553
+      EdificiosDolores_12: -8220867839303982658
+      EdificiosDolores_13: 1798333954623004668
+      EdificiosDolores_14: 5986202606437957569
+      EdificiosDolores_15: 397869763123773741
+      EdificiosDolores_16: 8646267132358080779
+      EdificiosDolores_17: 5820118851134396480
+      EdificiosDolores_18: 8849934658310456200
+      EdificiosDolores_19: -1186687668093518725
+      EdificiosDolores_2: 6172518464372840472
+      EdificiosDolores_20: -2590995524654422271
+      EdificiosDolores_21: 3832369842577438953
+      EdificiosDolores_22: -7544782570848647803
+      EdificiosDolores_3: -6442929666751830114
+      EdificiosDolores_4: 1447640245976320272
+      EdificiosDolores_5: 2628680522432492666
+      EdificiosDolores_6: -2770195276275704914
+      EdificiosDolores_7: -1478316295183313250
+      EdificiosDolores_8: -4623127579639718573
+      EdificiosDolores_9: 5802825572789171476
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
