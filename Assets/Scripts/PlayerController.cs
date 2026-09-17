@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        // Enable the Player action map when the script is enabled
         if (inputActions != null)
         {
             inputActions.FindActionMap("Player").Enable();
@@ -64,6 +65,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        // Disable the Player action map when the script is disabled
         if (inputActions != null)
         {
             inputActions.FindActionMap("Player").Disable();
@@ -77,15 +79,18 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        // Read input values and check for jump and dash requests
         moveInput = moveAction.ReadValue<Vector2>();
         jumpRequested |= jumpAction.WasPressedThisFrame();
         dashRequested |= dashAction.WasPressedThisFrame();
 
+        // Update the facing direction based on horizontal movement input
         if (Mathf.Abs(moveInput.x) > 0.01f)
         {
             facingDirection = moveInput.x > 0f ? 1 : -1;
         }
 
+        // Handle shooting input
         if (shootAction != null && shootAction.WasPressedThisFrame())
         {
             Shoot();
@@ -99,6 +104,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        // Handle dashing logic
         if (isDashing)
         {
             dashTimeRemaining -= Time.fixedDeltaTime;
@@ -132,6 +138,7 @@ public class PlayerController : MonoBehaviour
 
     private void Move()
     {
+        // Calculate the target speed based on input and apply acceleration or deceleration
         float targetSpeed = moveInput.x * moveSpeed;
         float speedChange = Mathf.Abs(targetSpeed) > 0.01f ? acceleration : deceleration;
         float newSpeed = Mathf.MoveTowards(playerRigidbody.linearVelocity.x, targetSpeed, speedChange * Time.fixedDeltaTime);
@@ -141,6 +148,7 @@ public class PlayerController : MonoBehaviour
 
     private void StartDash()
     {
+        // Start the dash by setting the appropriate flags and adjusting gravity
         isDashing = true;
         dashTimeRemaining = dashDuration;
         playerRigidbody.gravityScale = 0f;
@@ -158,6 +166,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        // Check if the player is grounded based on the collision contacts
         foreach (ContactPoint2D contact in collision.contacts)
         {
             if (contact.normal.y > 0.5f)
@@ -171,6 +180,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        // Check if the player has exited a collision with the ground layer
         if ((groundLayer.value & (1 << collision.gameObject.layer)) != 0)
         {
             isGrounded = false;
@@ -179,6 +189,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Check for collisions with objects that can trigger victory conditions
         if (other.CompareTag("Campana") || other.gameObject.name == "Campana")
         {
             GameFlowController.Instance?.ShowVictory();
@@ -187,6 +198,7 @@ public class PlayerController : MonoBehaviour
 
     private void Shoot()
     {
+        // Instantiate a projectile at the specified spawn point or the player's position if no spawn point is assigned
         if (projectile == null)
         {
             Debug.LogError("Assign a projectile prefab to PlayerShooting.", this);

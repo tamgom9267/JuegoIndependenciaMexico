@@ -13,22 +13,28 @@ public class PlayerHealth : MonoBehaviour
         UpdateHearts();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (!other.TryGetComponent<CannonballSpawner>(out _))
+        // Check for collisions with objects that can damage the player
+        if (other.gameObject.CompareTag("Cannonball"))
         {
-            return;
+            TakeDamage(1);
+            Destroy(other.gameObject);
         }
 
-        TakeDamage(1);
-        Destroy(other.gameObject);
+        if (other.gameObject.CompareTag("KillZone"))
+        {
+            TakeDamage(currentHealth);
+        }
     }
 
     private void TakeDamage(int damage)
     {
+        // Reduce the player's health and update the heart display
         currentHealth = Mathf.Max(currentHealth - damage, 0);
         UpdateHearts();
 
+        // Check if the player has been defeated
         if (currentHealth == 0)
         {
             Debug.Log("Player defeated.", this);
@@ -39,6 +45,7 @@ public class PlayerHealth : MonoBehaviour
 
     private int GetHeartCount()
     {
+        // Return the number of heart GameObjects in the hearts container
         if (heartsContainer == null)
         {
             Debug.LogError("Assign the hearts container to PlayerHealth.", this);
@@ -50,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void UpdateHearts()
     {
+        // Update the heart display based on the current health
         if (heartsContainer == null)
         {
             return;

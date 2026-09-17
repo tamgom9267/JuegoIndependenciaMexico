@@ -4,6 +4,7 @@ public class BannerProjectile : MonoBehaviour
 {
     [SerializeField] private float speed = 12f;
     [SerializeField] private int damage = 1;
+    [SerializeField] private float lifetime = 2f;
 
     private Rigidbody2D projectileRigidbody;
 
@@ -11,6 +12,7 @@ public class BannerProjectile : MonoBehaviour
     {
         projectileRigidbody = GetComponent<Rigidbody2D>();
         projectileRigidbody.linearVelocity = Vector2.right * speed;
+        Destroy(gameObject, lifetime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
