@@ -213,11 +213,25 @@ MonoBehaviour:
     Cada sugerencia fue detalladamente verificada por mi si es que fuera a ser implementada
 
 
-    Musica:
-
-
     Efectos
-    de sonido:
+    de Sonido:
+
+    Impacto de Estandar: qubodupImpact - https://opengameart.org/content/impact
+
+    disparo:
+    rubberduck - https://opengameart.org/content/25-cc0-bang-firework-sfx
+
+    Estandar
+    tirado: bart - https://opengameart.org/content/18-random-video-game-sound-effects
+
+    Choque
+    de proyectil: Spring Spring - https://opengameart.org/content/various-sound-effects-0
+
+    Campana:
+    Ulrich Metzner - https://opengameart.org/content/church-bell
+
+
+    Musica:
 
 
 '
@@ -750,7 +764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &667621630
 RectTransform:
   m_ObjectHideFlags: 0

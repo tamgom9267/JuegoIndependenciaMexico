@@ -5,6 +5,7 @@ public class BannerProjectile : MonoBehaviour
     [SerializeField] private float speed = 12f;
     [SerializeField] private int damage = 1;
     [SerializeField] private float lifetime = 2f;
+    [SerializeField] private AudioClip hitSound;
 
     private Rigidbody2D projectileRigidbody;
 
@@ -23,7 +24,16 @@ public class BannerProjectile : MonoBehaviour
             return;
         }
 
+        PlaySound(hitSound, other.transform.position);
         enemyHealth.TakeDamage(damage);
         Destroy(gameObject);
+    }
+
+    private void PlaySound(AudioClip clip, Vector3 position)
+    {
+        if (clip != null)
+        {
+            AudioSource.PlayClipAtPoint(clip, position);
+        }
     }
 }

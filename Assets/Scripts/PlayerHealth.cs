@@ -4,6 +4,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private Transform heartsContainer;
     [SerializeField] private int maxHealth = 3;
+    [SerializeField] private AudioClip hitSound;
 
     private int currentHealth;
 
@@ -18,6 +19,11 @@ public class PlayerHealth : MonoBehaviour
         // Check for collisions with objects that can damage the player
         if (other.gameObject.CompareTag("Cannonball"))
         {
+            if (hitSound != null)
+            {
+                AudioSource.PlayClipAtPoint(hitSound, other.transform.position);
+            }
+
             TakeDamage(1);
             Destroy(other.gameObject);
         }

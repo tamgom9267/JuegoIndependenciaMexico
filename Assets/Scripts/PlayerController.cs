@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     [Header("Shooting")]
     [SerializeField] private GameObject projectile;
     [SerializeField] private Transform projectileSpawnPoint;
+    [SerializeField] private AudioClip shootSound;
+    [SerializeField] private AudioClip bellSound;
 
     private Rigidbody2D playerRigidbody;
     private InputAction moveAction;
@@ -192,6 +194,7 @@ public class PlayerController : MonoBehaviour
         // Check for collisions with objects that can trigger victory conditions
         if (other.CompareTag("Campana") || other.gameObject.name == "Campana")
         {
+            PlaySound(bellSound, other.transform.position);
             GameFlowController.Instance?.ShowVictory();
         }
     }
@@ -206,6 +209,15 @@ public class PlayerController : MonoBehaviour
         }
 
         Transform spawnPoint = projectileSpawnPoint != null ? projectileSpawnPoint : transform;
+        PlaySound(shootSound, spawnPoint.position);
         Instantiate(projectile, spawnPoint.position, Quaternion.identity);
+    }
+
+    private void PlaySound(AudioClip clip, Vector3 position)
+    {
+        if (clip != null)
+        {
+            AudioSource.PlayClipAtPoint(clip, position);
+        }
     }
 }

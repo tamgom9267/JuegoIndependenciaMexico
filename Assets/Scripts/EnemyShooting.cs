@@ -4,6 +4,7 @@ public class EnemyShooting : MonoBehaviour
 {
     public GameObject cannonball;
     public Transform cannonballPos;
+    [SerializeField] private AudioClip shootSound;
 
     private float timer;
 
@@ -27,6 +28,11 @@ public class EnemyShooting : MonoBehaviour
 
     void Shoot()
     {
+        if (shootSound != null)
+        {
+            AudioSource.PlayClipAtPoint(shootSound, cannonballPos.position);
+        }
+
         Instantiate(cannonball, cannonballPos.position, Quaternion.identity);
     }
 }

@@ -84,6 +84,7 @@ public class GameFlowController : MonoBehaviour
         gameEnded = true;
         isPaused = false;
         SetPanelActive(victoryPanel, true);
+        // Play bell sound effect
         Time.timeScale = 0f;
     }
 

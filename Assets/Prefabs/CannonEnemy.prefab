@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooting
   cannonball: {fileID: 3910873282224105461, guid: 63cb9b0fe718241488416f3f2b3a83ac, type: 3}
   cannonballPos: {fileID: 503533443203419662}
+  shootSound: {fileID: 8300000, guid: 170d978a14de12d4b9053ba2a27639fc, type: 3}
 --- !u!114 &926064523460534647
 MonoBehaviour:
   m_ObjectHideFlags: 0

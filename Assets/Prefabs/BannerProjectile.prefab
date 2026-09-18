@@ -181,3 +181,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BannerProjectile
   speed: 12
   damage: 1
+  lifetime: 2
+  hitSound: {fileID: 8300000, guid: 31fe727d4d31ff74595973e7d4416e65, type: 3}
