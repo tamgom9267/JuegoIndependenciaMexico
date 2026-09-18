@@ -12,7 +12,7 @@ public class BannerProjectile : MonoBehaviour
     private void Awake()
     {
         projectileRigidbody = GetComponent<Rigidbody2D>();
-        projectileRigidbody.linearVelocity = Vector2.right * speed;
+        projectileRigidbody.linearVelocity = transform.right * speed;
         Destroy(gameObject, lifetime);
     }
 

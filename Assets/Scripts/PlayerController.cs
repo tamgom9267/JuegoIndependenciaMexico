@@ -210,7 +210,10 @@ public class PlayerController : MonoBehaviour
 
         Transform spawnPoint = projectileSpawnPoint != null ? projectileSpawnPoint : transform;
         PlaySound(shootSound, spawnPoint.position);
-        Instantiate(projectile, spawnPoint.position, Quaternion.identity);
+        Quaternion projectileRotation = facingDirection > 0
+            ? Quaternion.identity
+            : Quaternion.Euler(0f, 180f, 0f);
+        Instantiate(projectile, spawnPoint.position, projectileRotation);
     }
 
     private void PlaySound(AudioClip clip, Vector3 position)
