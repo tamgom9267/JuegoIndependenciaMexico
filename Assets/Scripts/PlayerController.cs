@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour
         // Handle shooting input
         if (shootAction != null && shootAction.WasPressedThisFrame())
         {
-            Shoot();
+            Shoot(shootAction.ReadValue<Vector2>());
         }
     }
 
@@ -199,7 +199,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Shoot()
+    private void Shoot(Vector2 shootDirection)
     {
         // Instantiate a projectile at the specified spawn point or the player's position if no spawn point is assigned
         if (projectile == null)
@@ -208,11 +208,15 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        if (shootDirection.sqrMagnitude < 0.01f)
+        {
+            return;
+        }
+
         Transform spawnPoint = projectileSpawnPoint != null ? projectileSpawnPoint : transform;
         PlaySound(shootSound, spawnPoint.position);
-        Quaternion projectileRotation = facingDirection > 0
-            ? Quaternion.identity
-            : Quaternion.Euler(0f, 180f, 0f);
+        float projectileAngle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+        Quaternion projectileRotation = Quaternion.Euler(0f, 0f, projectileAngle);
         Instantiate(projectile, spawnPoint.position, projectileRotation);
     }
 
