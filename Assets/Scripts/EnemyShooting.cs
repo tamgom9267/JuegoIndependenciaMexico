@@ -5,6 +5,7 @@ public class EnemyShooting : MonoBehaviour
     public GameObject cannonball;
     public Transform cannonballPos;
     [SerializeField] private AudioClip shootSound;
+    [SerializeField] private float shootingCooldown = 2f;
 
     private float timer;
 
@@ -19,7 +20,7 @@ public class EnemyShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= 2f)
+        if (timer >= shootingCooldown)
         {
             timer = 0f;
             Shoot();

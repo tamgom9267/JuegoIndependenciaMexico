@@ -18,10 +18,12 @@ public class PlayerController : MonoBehaviour
 
     [Header("Grounding")]
     [SerializeField] private LayerMask groundLayer = ~0;
+    [SerializeField] private Animator playerAnimator;
 
     [Header("Shooting")]
     [SerializeField] private GameObject projectile;
     [SerializeField] private Transform projectileSpawnPoint;
+    [SerializeField] private Transform miguelHidalgoArm;
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private AudioClip bellSound;
 
@@ -42,6 +44,10 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
+        if (playerAnimator == null)
+        {
+            playerAnimator = GetComponentInChildren<Animator>();
+        }
 
         if (inputActions == null)
         {
@@ -91,6 +97,8 @@ public class PlayerController : MonoBehaviour
         {
             facingDirection = moveInput.x > 0f ? 1 : -1;
         }
+
+        UpdateAnimationParameters();
 
         // Handle shooting input
         if (shootAction != null && shootAction.WasPressedThisFrame())
@@ -146,6 +154,17 @@ public class PlayerController : MonoBehaviour
         float newSpeed = Mathf.MoveTowards(playerRigidbody.linearVelocity.x, targetSpeed, speedChange * Time.fixedDeltaTime);
 
         playerRigidbody.linearVelocity = new Vector2(newSpeed, playerRigidbody.linearVelocity.y);
+    }
+
+    private void UpdateAnimationParameters()
+    {
+        if (playerAnimator == null || playerRigidbody == null)
+        {
+            return;
+        }
+
+        playerAnimator.SetFloat("Speed", Mathf.Abs(playerRigidbody.linearVelocity.x));
+        playerAnimator.SetBool("IsGrounded", isGrounded);
     }
 
     private void StartDash()
@@ -217,6 +236,12 @@ public class PlayerController : MonoBehaviour
         PlaySound(shootSound, spawnPoint.position);
         float projectileAngle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
         Quaternion projectileRotation = Quaternion.Euler(0f, 0f, projectileAngle);
+
+        if (miguelHidalgoArm != null)
+        {
+            miguelHidalgoArm.localRotation = projectileRotation;
+        }
+
         Instantiate(projectile, spawnPoint.position, projectileRotation);
     }
 
