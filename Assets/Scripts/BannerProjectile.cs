@@ -25,6 +25,7 @@ public class BannerProjectile : MonoBehaviour
         }
 
         PlaySound(hitSound, other.transform.position);
+        GameFlowController.Instance?.RegisterEnemyHit();
         enemyHealth.TakeDamage(damage);
         Destroy(gameObject);
     }

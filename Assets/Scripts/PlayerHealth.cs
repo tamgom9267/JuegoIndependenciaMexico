@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
 
     private int currentHealth;
 
+    public int CurrentHealth => currentHealth;
+
     private void Awake()
     {
         currentHealth = Mathf.Clamp(maxHealth, 1, GetHeartCount());
@@ -44,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth == 0)
         {
             Debug.Log("Player defeated.", this);
-            GameFlowController.Instance?.ShowDefeat();
+            GameFlowController.Instance?.ShowDefeat(currentHealth);
             enabled = false;
         }
     }

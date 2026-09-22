@@ -15,6 +15,8 @@ public class GameFlowController : MonoBehaviour
     private InputAction pauseAction;
     private bool isPaused;
     private bool gameEnded;
+    private int enemyHits;
+    private bool metricsLogged;
 
     private void Awake()
     {
@@ -61,7 +63,15 @@ public class GameFlowController : MonoBehaviour
         }
     }
 
-    public void ShowDefeat()
+    public void RegisterEnemyHit()
+    {
+        if (!gameEnded)
+        {
+            enemyHits++;
+        }
+    }
+
+    public void ShowDefeat(int remainingLives = 0)
     {
         if (gameEnded)
         {
@@ -71,6 +81,7 @@ public class GameFlowController : MonoBehaviour
         gameEnded = true;
         isPaused = false;
         SetPanelActive(defeatPanel, true);
+        LogSessionMetrics("Defeat", remainingLives);
         Time.timeScale = 0f;
     }
 
@@ -84,8 +95,21 @@ public class GameFlowController : MonoBehaviour
         gameEnded = true;
         isPaused = false;
         SetPanelActive(victoryPanel, true);
+        PlayerHealth playerHealth = FindFirstObjectByType<PlayerHealth>();
+        LogSessionMetrics("Victory", playerHealth != null ? playerHealth.CurrentHealth : -1);
         // Play bell sound effect
         Time.timeScale = 0f;
+    }
+
+    private void LogSessionMetrics(string result, int remainingLives)
+    {
+        if (metricsLogged)
+        {
+            return;
+        }
+
+        metricsLogged = true;
+        Debug.Log($"GAME_METRICS;result={result};enemyHits={enemyHits};playerLivesAtEnd={remainingLives}");
     }
 
     public void TogglePause()
